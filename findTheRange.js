@@ -15,15 +15,15 @@ for (let i = 0; i < size; i++) {
   }
 }
 console.log("The smallest element of the array is::" + array[0]);
+
 //find largest number is the array
 for (let i = 0; i < size; i++) {
-    for (let j = i + 1; j < size; j++) {
-      if (array[i] < array[j]) {
-        temp = array[i];
-        array[i] = array[j];
-        array[j] = temp;
-      }
+  for (let j = i + 1; j < size; j++) {
+    if (array[i] < array[j]) {
+      temp = array[i];
+      array[i] = array[j];
+      array[j] = temp;
     }
   }
-  console.log("The largest element of the array is::" + array[0]);
-
+}
+console.log("The largest element of the array is::" + array[0]);
